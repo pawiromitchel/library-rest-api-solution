@@ -91,7 +91,7 @@
     {
         let book = {  "id" : document.getElementById("bookId").value, "name" : document.getElementById("name").value, "author" : document.getElementById("author").value, "isbn" : document.getElementById("isbn").value }
         var xmlhttp = new XMLHttpRequest();
-           xmlhttp.open("POST", "/restwithjersey/api/book/update", true);
+           xmlhttp.open("PUT", "/restwithjersey/api/book/update", true);
              xmlhttp.onreadystatechange = function() {
             if (xmlhttp.readyState>3 && xmlhttp.status==200) { loadBookList(); clearInputFields(); document.getElementById("btnSaveBook").innerHTML = "Add Book";}
             };

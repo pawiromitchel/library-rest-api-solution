@@ -27,7 +27,7 @@ public class BookController {
     }
 
     @Path("/update")
-    @POST
+    @PUT
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Book update(Book book) {
